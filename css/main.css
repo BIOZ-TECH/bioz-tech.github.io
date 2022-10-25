@@ -1950,6 +1950,117 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 
+  @media (max-width:768px) {
+    .flips-container {
+      height: 65vh;
+    }
+    .flips-container .flip-container {
+      margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:425px) {
+  .front {
+    padding: 0;
+  }
+
+  .front .title {
+    display: flex;
+    height: -webkit-fill-available;
+    align-items: center;
+  }
+
+  .front .title span {
+    margin: 0 1rem 0 0;
+    padding: 1.3rem !important;
+  }
+
+  .front div .lnr {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width:320px) {
+  .flips-container {
+    height: 75vh !important;
+  }
+}
+
+@media (max-width:1024px) {
+  .flip-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width:425px) {
+  #platforms .flips-container {
+    padding-top: 1.5rem;
+  }
+  #platforms .flip-container {
+    min-width: 100vw;
+  }
+  #platforms .back p, #platforms .back div {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+@media (max-width:1024px) {
+  #our-pilars .flips-container {
+    height: 60vh !important;
+  }
+  #our-pilars .flip-container {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  #platforms .flips-container {
+    height: 75vh !important;
+  }
+}
+
+@media (max-width:425px) {
+  #platforms .flips-container {
+    flex-flow: column;
+  }
+}
+
+@media (max-width:320px) {
+  #platforms .flips-container {
+    height: 80vh !important;
+  }
+  #platforms .back p, #platforms .back div {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width:425px) {
+  #our-pilars .flips-container {
+    height: 60vh !important;
+  }
+  #our-pilars .flip-container {
+    min-width: 100vw !important;
+  }
+}
+
+@media (max-width:375px) {
+  #our-pilars .flips-container {
+    height: 70vh !important;
+  }
+}
+
+@media (max-width:320px) {
+  #our-pilars .flips-container {
+    height: 80vh !important;
+  }
+}
+
   .flip-card {
     width: 100%;
     height: 100%;
@@ -2164,7 +2275,17 @@ li > .test-button {
 
 #mobile-nav-toggle i {
   color: #fff;
-  font-weight: 900; }
+  background-color: #222222;
+  padding: 0.5rem;
+  border-radius: 0.3rem; }
+
+  @media (max-width: 1240px) {
+    #mobile-nav-toggle {
+      display: inline; }
+  
+    #nav-menu-container {
+      display: none; } }
+
 
 @media (max-width: 960px) {
   #mobile-nav-toggle {
@@ -2172,6 +2293,120 @@ li > .test-button {
 
   #nav-menu-container {
     display: none; } }
+
+    @media (max-width: 1440px) {
+      .google-map {
+        flex: 0 0 25%;
+        max-width: 25%;  
+       }
+ }
+
+ @media (max-width: 1024px) {
+  .google-map {
+    flex: 0 0 50%;
+    max-width: 50%;
+   }
+  
+   .footer-2 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+   }
+
+   .footer-1 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+   }
+
+   .footer-divider {
+    visibility: hidden;
+   }
+}
+
+@media (max-width: 768px) {
+ 
+   .footer-2 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+   }
+
+   .footer-1 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+   }
+
+   .footer-divider {
+    visibility: hidden;
+   }
+}
+
+@media (max-width: 1440px) {
+ 
+  .home-banner-area .banner-img {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+ 
+  .lnr {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 425px) {
+ 
+  .lnr {
+    font-size: 1.5rem !important;
+  }
+}
+
+
+
+@media (max-width: 425px) {
+ 
+  .footer-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-top: 1.5rem;
+  }
+
+  .google-map {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 30vh;
+  }
+
+  .google-map iframe {
+    margin: 0 !important;
+    border: 0;
+  }
+
+  .footer-1 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-img {
+    width: 30vw;
+  }
+
+  .footer-divider {
+   visibility: hidden;
+  }
+}
+
+
 /* Mobile Nav Styling */
 #mobile-nav {
   position: fixed;
@@ -2277,23 +2512,72 @@ section {
     transform: translatey(0px);
     filter: drop-shadow(0px 5px 15px #222);
     animation: float 6s ease-in-out infinite;
-    text-align: right;
-    padding-left: 2rem;
-  }
+    text-align: end; }
     @media (max-width: 1440px) {
+        .home-banner-content {
+          flex: 0 0 58.333333%;
+          max-width: 58.333333%;  
+         }
+      .home-banner-area .banner-img img {
+        width: 100%;
+      }
+    }
+    @media (max-width: 1024px) {
+      .home-banner-content {
+        flex: 0 0 50%;
+        max-width: 50%;
+       }
+    .home-banner-area .banner-img {
+      flex: 0 0 50%;
+    max-width: 50%;
+    }
+    .home-banner-area .banner-img img {
+      width: 90%;
+    }
+  }
+
+    @media (max-width: 768px) {
+      .home-banner-content {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
       .home-banner-area .banner-img {
-        text-align: left; }
+        flex: 0 0 50%;
+        max-width: 50%; }
         .home-banner-area .banner-img img {
-          width: 60%; } }
-    @media (max-width: 991px) {
-      .home-banner-area .banner-img {
-        text-align: center; } }
-    @media (max-width: 767px) {
-      .home-banner-area .banner-img {
-        display: none; } }
-  @media (max-width: 991px) {
-    .home-banner-area .fullscreen {
-      height: 700px !important; } }
+          width: 100%;
+        }
+      }
+
+
+
+      @media (max-width: 425px) {
+        .home-banner-area .fullscreen {
+          flex-flow: column;
+          flex-direction: column-reverse;}
+        
+          .home-banner-area .banner-img {
+            margin-top: auto;
+    text-align: center;
+    max-width: 100%;
+    flex: none;
+          }
+
+          .home-banner-area .banner-img img {
+            width: 80%;
+          }
+
+          .home-banner-content {
+            margin-bottom: auto;
+            text-align: center;
+    max-width: 100%;
+    flex: none;
+          }
+
+          .home-banner-content h1 {
+            margin-top: 15px;
+          }
+    }
 
 .banner-area {
   background: url(../img/banner.jpg) center;
@@ -2340,6 +2624,9 @@ section {
   @media (max-width: 767px) {
     .home-banner-content h1 {
       margin-top: 50px; } }
+      @media (max-width: 425px) {
+        .home-banner-content h1 {
+          margin-top: 15px; } }
 .home-banner-content p {
   color: #222222;
   margin-bottom: 30px; }
